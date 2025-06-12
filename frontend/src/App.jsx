@@ -1,12 +1,12 @@
-import React from 'react'
-import HeroSection from './components/HeroSection'
+import React from "react";
+import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
 
-const App = () => {
+export default function HomePage() {
   return (
-   <>
-    <HeroSection />
-   </>
-  )
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+    </div>
+  );
 }
-
-export default App
