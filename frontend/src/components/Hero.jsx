@@ -3,60 +3,6 @@ import React from "react";
 export const Hero = () => {
   return (
     <>
-      {/*
-        Inline style tag for custom Tailwind-compatible animations and Google Fonts.
-        Added Manrope font for headings and Inter for body text.
-      */}
-      <style>
-        {`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
-
-        body {
-          font-family: 'Inter', sans-serif;
-        }
-
-        .font-manrope {
-          font-family: 'Manrope', sans-serif;
-        }
-
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-20px); }
-          to { opacity: 1; transform: translateX(0); }
-        }
-
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes bounceSubtle {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-5px); } /* Reduced bounce for subtlety */
-        }
-
-        .animate-fade-in {
-          animation: fadeIn 0.8s ease-out forwards;
-        }
-
-        .animate-slide-in-left {
-          animation: slideInLeft 0.8s ease-out forwards;
-        }
-
-        .animate-fade-in-up {
-          animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .animate-bounce-subtle {
-          animation: bounceSubtle 1.5s infinite; /* Slower and more subtle bounce */
-        }
-        `}
-      </style>
-
       {/* Main section container with a subtle gradient background */}
       <section className="relative py-24 md:py-32 lg:py-40 bg-gradient-to-b from-gray-50 via-white to-gray-100 overflow-hidden min-h-screen flex items-center">
         {/* Subtle Abstract Background Shape - adds visual depth without being distracting */}
