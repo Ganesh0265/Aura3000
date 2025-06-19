@@ -21,7 +21,7 @@ const AdminSidebar = () => {
           </a>
           {/* My Wardrobe Link */}
           <a
-            href="wardrobe"
+            href="/wardrobe"
             className="flex items-center p-4 rounded-xl text-gray-700 hover:bg-gray-100 hover:text-orange-600 transition duration-300 transform hover:scale-105"
           >
             <span className="mr-4 text-xl">👕</span>
@@ -29,7 +29,7 @@ const AdminSidebar = () => {
           </a>
           {/* Outfits Link */}
           <a
-            href="#"
+            href="/outfit"
             className="flex items-center p-4 rounded-xl text-gray-700 hover:bg-gray-100 hover:text-orange-600 transition duration-300 transform hover:scale-105"
           >
             <span className="mr-4 text-xl">👚</span>

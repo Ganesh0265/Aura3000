@@ -80,17 +80,19 @@ const MyWardrobePage = () => {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
-      <AdminSidebar />
-      <div className="flex-1 flex flex-col ml-64">
-        <WardrobeHeader />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-8">
-          {wardrobeItems.map((item) => (
-            <WardrobeItemCard key={item.id} item={item} />
-          ))}
+    <>
+      <div className="flex min-h-screen bg-gray-50">
+        <AdminSidebar />
+        <div className="flex-1 flex flex-col ml-64">
+          <WardrobeHeader />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-8">
+            {wardrobeItems.map((item) => (
+              <WardrobeItemCard key={item.id} item={item} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
