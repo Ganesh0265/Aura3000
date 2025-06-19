@@ -4,25 +4,6 @@ import { Navbar } from "../components/Navbar";
 export const LoginPage = () => {
   return (
     <>
-      {/*
-        Inline style tag for Google Fonts (Manrope and Inter).
-        This ensures the fonts are available for this component.
-        Ideally, these would be imported globally in a larger application.
-      */}
-      <style>
-        {`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
-
-        body {
-          font-family: 'Inter', sans-serif;
-        }
-
-        .font-manrope {
-          font-family: 'Manrope', sans-serif;
-        }
-        `}
-      </style>
-
       <Navbar />
 
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center p-4 sm:p-6 font-inter">
@@ -118,13 +99,14 @@ export const LoginPage = () => {
                 </a>
               </div>
 
-              {/* Log In Button */}
-              <button
-                type="submit"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-              >
-                Log In
-              </button>
+              <a href="/Dashboard">
+                <button
+                  type="submit"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                >
+                  Log In
+                </button>
+              </a>
             </form>
 
             {/* "Or" Separator */}

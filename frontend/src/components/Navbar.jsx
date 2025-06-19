@@ -3,27 +3,6 @@ import React from "react";
 export const Navbar = () => {
   return (
     <>
-      {/*
-        Inline style tag for Google Fonts to ensure Manrope and Inter are available.
-        These imports should ideally be in a global CSS file or the main HTML file,
-        but are placed here for self-containment within the immersive.
-      */}
-      <style>
-        {`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
-
-        /* Applying Inter as the default font for the body (if not already set globally) */
-        body {
-          font-family: 'Inter', sans-serif;
-        }
-
-        /* Custom class for Manrope font, primarily for headings/logo */
-        .font-manrope {
-          font-family: 'Manrope', sans-serif;
-        }
-        `}
-      </style>
-
       <nav className="flex flex-col sm:flex-row justify-between items-center py-4 px-6 md:px-12 bg-white shadow-sm font-inter">
         <a href="/">
           <div className="text-2xl font-extrabold text-gray-800 font-manrope mb-4 sm:mb-0">
